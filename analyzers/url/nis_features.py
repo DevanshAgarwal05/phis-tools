@@ -1,4 +1,4 @@
-# utils/nis_features.py
+# analyzers/url/nis_features.py
 import re
 import math
 from urllib.parse import urlparse

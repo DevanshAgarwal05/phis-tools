@@ -6,3 +6,5 @@ logs/
 feedback_log.csv
 _legacy_backup/
 *.zip
+.pytest_cache/
+temp_remote/

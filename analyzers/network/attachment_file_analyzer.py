@@ -1,4 +1,4 @@
-# utils/attachment_file_analyzer.py
+# analyzers/network/attachment_file_analyzer.py
 import magic
 import math
 import os

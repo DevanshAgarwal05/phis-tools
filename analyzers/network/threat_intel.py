@@ -1,4 +1,4 @@
-# utils/threat_intel.py
+# analyzers/network/threat_intel.py
 import re
 from urllib.parse import urlparse
 

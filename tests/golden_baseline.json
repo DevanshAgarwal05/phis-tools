@@ -1,0 +1,2064 @@
+{
+ "empty": {
+  "elements": [
+   [
+    "title",
+    "Phishing Detection and Prevention Tool"
+   ],
+   [
+    "caption",
+    "Detect phishing based on email content, headers, URLs, and remote attachments."
+   ],
+   [
+    "selectbox",
+    "Normal Policy (University / General)"
+   ],
+   [
+    "info",
+    "Policy thresholds \u2192 Suspicious \u2265 60, Phishing \u2265 80 (Risk Score out of 100)"
+   ],
+   [
+    "checkbox",
+    "True"
+   ],
+   [
+    "checkbox",
+    "True"
+   ],
+   [
+    "success",
+    "Email ML pipeline is available (LSTM and/or Logistic)."
+   ],
+   [
+    "success",
+    "Hybrid Meta model loaded (trained combiner)."
+   ],
+   [
+    "success",
+    "URL ML model loaded (Host+URL TF-IDF pipeline)."
+   ],
+   [
+    "expander",
+    "Debug: Loaded model status"
+   ],
+   [
+    "markdown",
+    "logistic: OK"
+   ],
+   [
+    "markdown",
+    "vectorizer: OK"
+   ],
+   [
+    "markdown",
+    "hybrid_meta: OK"
+   ],
+   [
+    "markdown",
+    "tokenizer: OK"
+   ],
+   [
+    "markdown",
+    "lstm: OK"
+   ],
+   [
+    "markdown",
+    "url_text_model: OK"
+   ],
+   [
+    "markdown",
+    "### Email Content Analysis"
+   ],
+   [
+    "text_input",
+    ""
+   ],
+   [
+    "text_area",
+    ""
+   ],
+   [
+    "text_area",
+    ""
+   ],
+   [
+    "text_area",
+    ""
+   ],
+   [
+    "button",
+    "True"
+   ],
+   [
+    "info",
+    "No email content provided - skipping email model prediction."
+   ],
+   [
+    "subheader",
+    "Header Analysis"
+   ],
+   [
+    "markdown",
+    "**Header Risk:** Low Risk *(confidence: low)*"
+   ],
+   [
+    "markdown",
+    "- No headers provided."
+   ],
+   [
+    "markdown",
+    "### Final Combined Verdict (NIS Risk Score)"
+   ],
+   [
+    "markdown",
+    "**Risk Score:** 50.0 / 100"
+   ],
+   [
+    "markdown",
+    "**Threat Level:** LOW  *(Policy Mode: Normal Policy (University / General))*"
+   ],
+   [
+    "success",
+    "Safe Email (Risk: 50.0)"
+   ],
+   [
+    "markdown",
+    "### Attack Type Classification (NIS)"
+   ],
+   [
+    "markdown",
+    "This helps categorize the incident like a real SOC / security tool would:"
+   ],
+   [
+    "markdown",
+    "\u2022 Generic Phishing / Social Engineering"
+   ],
+   [
+    "markdown",
+    "### Recommended Actions (Prevention / Response)"
+   ],
+   [
+    "markdown",
+    "\u2022 Do not click links or open attachments from suspicious emails."
+   ],
+   [
+    "markdown",
+    "\u2022 Verify the request using an official channel (company website/app or known phone number)."
+   ],
+   [
+    "markdown",
+    "### Why this was flagged (NIS Indicators)"
+   ],
+   [
+    "markdown",
+    "**Email Indicators**"
+   ],
+   [
+    "markdown",
+    "- Email ML probability used: 0.50"
+   ],
+   [
+    "markdown",
+    "**Header/Spoofing Indicators**"
+   ],
+   [
+    "markdown",
+    "- Header risk: Low Risk (confidence: low)"
+   ],
+   [
+    "markdown",
+    "- No headers provided."
+   ],
+   [
+    "markdown",
+    "**URL/Domain Indicators**"
+   ],
+   [
+    "markdown",
+    "- Average URL ML probability: 0.50"
+   ],
+   [
+    "markdown",
+    "**Threat Intel Indicators**"
+   ],
+   [
+    "markdown",
+    "- Threat intel source: offline"
+   ],
+   [
+    "markdown",
+    "**Final Risk Reasoning**"
+   ],
+   [
+    "markdown",
+    "- Combined risk score: 50.0/100"
+   ],
+   [
+    "markdown",
+    "- Policy mode: Normal Policy (University / General)"
+   ],
+   [
+    "markdown",
+    "- Final score blends ML probabilities with NIS heuristic bumps (headers, URL/domain signals, intel)."
+   ],
+   [
+    "expander",
+    "Raw compact reasons"
+   ],
+   [
+    "markdown",
+    "- No strong indicators beyond model output."
+   ],
+   [
+    "expander",
+    "Technical Details (NIS Features)"
+   ],
+   [
+    "markdown",
+    "**Top URL used for explanation:** (none)"
+   ],
+   [
+    "json",
+    "{\"url_features\": {\"host\": \"\", \"tld\": \"\", \"url_len\": 0, \"has_https\": 0, \"has_ip_host\": 0, \"has_at\": 0, \"has_double_slash_in_path\": 0, \"num_subdomain_dots\": 0, \"keyword_count\": 0, \"keyword_hits\": [], \"host_entropy\": 0.0, \"is_shortener\": 0, \"suspicious_tld\": 0, \"high_digit_ratio\": 0, \"many_hyphens\": 0}, \"email_features\": {\"urgency_hits\": [], \"cred_hits\": [], \"attach_hits\": [], \"reply_to_differs\": 0, \"has_headers\": 0}, \"threat_intel\": {\"source\": \"offline\"}, \"policy\": \"Normal Policy (University / General)\", \"policy_thresholds\": {\"suspicious\": 60.0, \"phishing\": 80.0}, \"attack_types\": [\"Generic Phishing / Social Engineering\"], \"header_details\": {\"risk\": \"Low Risk\", \"confidence\": \"low\", \"manual_or_incomplete\": false, \"score\": 0.0, \"issues\": [\"No headers provided.\"]}, \"risk_score_raw\": 50.0, \"risk_score_calibrated\": 50.0}"
+   ],
+   [
+    "markdown",
+    "---"
+   ],
+   [
+    "subheader",
+    "Feedback"
+   ],
+   [
+    "markdown",
+    "Was this classification correct?"
+   ],
+   [
+    "radio",
+    "Yes"
+   ],
+   [
+    "button",
+    "False"
+   ],
+   [
+    "markdown",
+    "### Scan History (last 20)"
+   ],
+   [
+    "arrow_data_frame",
+    "              timestamp  ...                                    subject_preview\n51  <TS>  ...                                               None\n52  <TS>  ...                                               None\n53  <TS>  ...                                               None\n54  <TS>  ...  Urgent: Your university account will be suspen...\n55  <TS>  ...              Project meeting rescheduled to Friday\n56  <TS>  ...              Important notice from accounts office\n57  <TS>  ...  Urgent: Your university account will be suspen...\n58  <TS>  ...              Project meeting rescheduled to Friday\n59  <TS>  ...              Project meeting rescheduled to Friday\n60  <TS>  ...              Project meeting rescheduled to Friday\n61  <TS>  ...  Urgent: Your university account will be suspen...\n62  <TS>  ...              Project meeting rescheduled to Friday\n63  <TS>  ...  Urgent: Your university account will be suspen...\n64  <TS>  ...                  Shared document for urgent review\n65  <TS>  ...                                  Updated timetable\n66  <TS>  ...                                  Updated timetable\n67  <TS>  ...              Important notice from accounts office\n68  <TS>  ...                       Important verification links\n69  <TS>  ...                       Important verification links\n70  <TS>  ...                                               None\n\n[20 rows x 9 columns]"
+   ],
+   [
+    "markdown",
+    "---"
+   ],
+   [
+    "markdown",
+    "### Remote Attachment URL Scan (Optional)"
+   ],
+   [
+    "text_input",
+    ""
+   ],
+   [
+    "button",
+    "False"
+   ]
+  ],
+  "exceptions": []
+ },
+ "relaxed": {
+  "elements": [
+   [
+    "title",
+    "Phishing Detection and Prevention Tool"
+   ],
+   [
+    "caption",
+    "Detect phishing based on email content, headers, URLs, and remote attachments."
+   ],
+   [
+    "selectbox",
+    "Relaxed Policy (Personal Use)"
+   ],
+   [
+    "info",
+    "Policy thresholds \u2192 Suspicious \u2265 70, Phishing \u2265 85 (Risk Score out of 100)"
+   ],
+   [
+    "checkbox",
+    "True"
+   ],
+   [
+    "checkbox",
+    "True"
+   ],
+   [
+    "success",
+    "Email ML pipeline is available (LSTM and/or Logistic)."
+   ],
+   [
+    "success",
+    "Hybrid Meta model loaded (trained combiner)."
+   ],
+   [
+    "success",
+    "URL ML model loaded (Host+URL TF-IDF pipeline)."
+   ],
+   [
+    "expander",
+    "Debug: Loaded model status"
+   ],
+   [
+    "markdown",
+    "logistic: OK"
+   ],
+   [
+    "markdown",
+    "vectorizer: OK"
+   ],
+   [
+    "markdown",
+    "hybrid_meta: OK"
+   ],
+   [
+    "markdown",
+    "tokenizer: OK"
+   ],
+   [
+    "markdown",
+    "lstm: OK"
+   ],
+   [
+    "markdown",
+    "url_text_model: OK"
+   ],
+   [
+    "markdown",
+    "### Email Content Analysis"
+   ],
+   [
+    "text_input",
+    "Invoice payment"
+   ],
+   [
+    "text_area",
+    "Please confirm your bank password to reset"
+   ],
+   [
+    "text_area",
+    ""
+   ],
+   [
+    "text_area",
+    "http://login-bank-update.tk"
+   ],
+   [
+    "button",
+    "True"
+   ],
+   [
+    "subheader",
+    "Email Model Predictions"
+   ],
+   [
+    "markdown",
+    "**Logistic Regression Probability:** 0.92"
+   ],
+   [
+    "markdown",
+    "**LSTM Model Probability:** 1.00"
+   ],
+   [
+    "markdown",
+    "**Email Probability Used:** 1.00"
+   ],
+   [
+    "info",
+    "Using trained Hybrid Meta model (logistic + LSTM)."
+   ],
+   [
+    "subheader",
+    "Header Analysis"
+   ],
+   [
+    "markdown",
+    "**Header Risk:** Low Risk *(confidence: low)*"
+   ],
+   [
+    "markdown",
+    "- No headers provided."
+   ],
+   [
+    "subheader",
+    "URL Analysis"
+   ],
+   [
+    "markdown",
+    "http://login-bank-update.tk \u2192 Probability: **0.99**"
+   ],
+   [
+    "markdown",
+    "**Average URL Risk Probability:** 0.99"
+   ],
+   [
+    "markdown",
+    "### Final Combined Verdict (NIS Risk Score)"
+   ],
+   [
+    "markdown",
+    "**Risk Score:** 100.0 / 100"
+   ],
+   [
+    "markdown",
+    "**Threat Level:** CRITICAL  *(Policy Mode: Relaxed Policy (Personal Use))*"
+   ],
+   [
+    "error",
+    "Phishing Detected (Risk: 100.0)"
+   ],
+   [
+    "markdown",
+    "### Attack Type Classification (NIS)"
+   ],
+   [
+    "markdown",
+    "This helps categorize the incident like a real SOC / security tool would:"
+   ],
+   [
+    "markdown",
+    "\u2022 Credential Harvesting"
+   ],
+   [
+    "markdown",
+    "\u2022 Brand Impersonation"
+   ],
+   [
+    "markdown",
+    "\u2022 Attachment Delivery (Possible Malware)"
+   ],
+   [
+    "markdown",
+    "### Recommended Actions (Prevention / Response)"
+   ],
+   [
+    "markdown",
+    "\u2022 Do not click links or open attachments from suspicious emails."
+   ],
+   [
+    "markdown",
+    "\u2022 Verify the request using an official channel (company website/app or known phone number)."
+   ],
+   [
+    "markdown",
+    "\u2022 Report the email to IT/SOC immediately (phishing incident)."
+   ],
+   [
+    "markdown",
+    "\u2022 Block the sender domain and URL at email gateway / DNS filtering (if available)."
+   ],
+   [
+    "markdown",
+    "\u2022 If you already clicked: change password immediately and enable MFA/2FA."
+   ],
+   [
+    "markdown",
+    "\u2022 Check for similar emails in inboxes (potential campaign) and warn users."
+   ],
+   [
+    "markdown",
+    "\u2022 Reset credentials for impacted accounts and monitor login attempts for anomalies."
+   ],
+   [
+    "markdown",
+    "\u2022 Quarantine the attachment and scan in a sandbox / AV before any access."
+   ],
+   [
+    "markdown",
+    "### Why this was flagged (NIS Indicators)"
+   ],
+   [
+    "markdown",
+    "**Email Indicators**"
+   ],
+   [
+    "markdown",
+    "- Email ML probability used: 1.00"
+   ],
+   [
+    "markdown",
+    "- Credential cues: password"
+   ],
+   [
+    "markdown",
+    "- Attachment cues: invoice, payment"
+   ],
+   [
+    "markdown",
+    "**Header/Spoofing Indicators**"
+   ],
+   [
+    "markdown",
+    "- Header risk: Low Risk (confidence: low)"
+   ],
+   [
+    "markdown",
+    "- No headers provided."
+   ],
+   [
+    "markdown",
+    "**URL/Domain Indicators**"
+   ],
+   [
+    "markdown",
+    "- Average URL ML probability: 0.99"
+   ],
+   [
+    "markdown",
+    "- Top URL host: login-bank-update.tk"
+   ],
+   [
+    "markdown",
+    "- Suspicious TLD detected: .tk"
+   ],
+   [
+    "markdown",
+    "- Suspicious URL keywords: login, update, bank"
+   ],
+   [
+    "markdown",
+    "**Threat Intel Indicators**"
+   ],
+   [
+    "markdown",
+    "- Threat intel source: offline"
+   ],
+   [
+    "markdown",
+    "- Brand hits: bank"
+   ],
+   [
+    "markdown",
+    "**Final Risk Reasoning**"
+   ],
+   [
+    "markdown",
+    "- Combined risk score: 100.0/100"
+   ],
+   [
+    "markdown",
+    "- Policy mode: Relaxed Policy (Personal Use)"
+   ],
+   [
+    "markdown",
+    "- Final score blends ML probabilities with NIS heuristic bumps (headers, URL/domain signals, intel)."
+   ],
+   [
+    "expander",
+    "Raw compact reasons"
+   ],
+   [
+    "markdown",
+    "- Email ML probability is high (1.00)."
+   ],
+   [
+    "markdown",
+    "- URL ML probability is high (0.99)."
+   ],
+   [
+    "markdown",
+    "- Suspicious TLD detected (.tk)."
+   ],
+   [
+    "markdown",
+    "- High domain randomness/entropy detected (possible generated domain)."
+   ],
+   [
+    "markdown",
+    "- Multiple suspicious keywords found in URL: login, update, bank."
+   ],
+   [
+    "markdown",
+    "- Credential-harvesting cues detected: password."
+   ],
+   [
+    "expander",
+    "Technical Details (NIS Features)"
+   ],
+   [
+    "markdown",
+    "**Top URL used for explanation:** http://login-bank-update.tk"
+   ],
+   [
+    "json",
+    "{\"url_features\": {\"host\": \"login-bank-update.tk\", \"tld\": \"tk\", \"url_len\": 27, \"has_https\": 0, \"has_ip_host\": 0, \"has_at\": 0, \"has_double_slash_in_path\": 0, \"num_subdomain_dots\": 1, \"keyword_count\": 3, \"keyword_hits\": [\"login\", \"update\", \"bank\"], \"host_entropy\": 3.821928094887362, \"is_shortener\": 0, \"suspicious_tld\": 1, \"high_digit_ratio\": 0, \"many_hyphens\": 0}, \"email_features\": {\"urgency_hits\": [], \"cred_hits\": [\"password\"], \"attach_hits\": [\"invoice\", \"payment\"], \"reply_to_differs\": 0, \"has_headers\": 0}, \"threat_intel\": {\"host\": \"login-bank-update.tk\", \"tld\": \"tk\", \"is_shortener\": 0, \"suspicious_tld\": 1, \"brand_hits\": [\"bank\"], \"brand_impersonation\": 0, \"source\": \"offline\"}, \"policy\": \"Relaxed Policy (Personal Use)\", \"policy_thresholds\": {\"suspicious\": 70.0, \"phishing\": 85.0}, \"attack_types\": [\"Credential Harvesting\", \"Brand Impersonation\", \"Attachment Delivery (Possible Malware)\"], \"header_details\": {\"risk\": \"Low Risk\", \"confidence\": \"low\", \"manual_or_incomplete\": false, \"score\": 0.0, \"issues\": [\"No headers provided.\"]}, \"risk_score_raw\": 100.0, \"risk_score_calibrated\": 100.0}"
+   ],
+   [
+    "expander",
+    "Online Threat Intel (optional)"
+   ],
+   [
+    "markdown",
+    "**VirusTotal:** API key not provided"
+   ],
+   [
+    "markdown",
+    "**AbuseIPDB:** (host is not an IP)"
+   ],
+   [
+    "markdown",
+    "---"
+   ],
+   [
+    "subheader",
+    "Feedback"
+   ],
+   [
+    "markdown",
+    "Was this classification correct?"
+   ],
+   [
+    "radio",
+    "Yes"
+   ],
+   [
+    "button",
+    "False"
+   ],
+   [
+    "markdown",
+    "### Scan History (last 20)"
+   ],
+   [
+    "arrow_data_frame",
+    "              timestamp  ...                                    subject_preview\n51  <TS>  ...                                               None\n52  <TS>  ...                                               None\n53  <TS>  ...                                               None\n54  <TS>  ...  Urgent: Your university account will be suspen...\n55  <TS>  ...              Project meeting rescheduled to Friday\n56  <TS>  ...              Important notice from accounts office\n57  <TS>  ...  Urgent: Your university account will be suspen...\n58  <TS>  ...              Project meeting rescheduled to Friday\n59  <TS>  ...              Project meeting rescheduled to Friday\n60  <TS>  ...              Project meeting rescheduled to Friday\n61  <TS>  ...  Urgent: Your university account will be suspen...\n62  <TS>  ...              Project meeting rescheduled to Friday\n63  <TS>  ...  Urgent: Your university account will be suspen...\n64  <TS>  ...                  Shared document for urgent review\n65  <TS>  ...                                  Updated timetable\n66  <TS>  ...                                  Updated timetable\n67  <TS>  ...              Important notice from accounts office\n68  <TS>  ...                       Important verification links\n69  <TS>  ...                       Important verification links\n70  <TS>  ...                                    Invoice payment\n\n[20 rows x 9 columns]"
+   ],
+   [
+    "markdown",
+    "---"
+   ],
+   [
+    "markdown",
+    "### Remote Attachment URL Scan (Optional)"
+   ],
+   [
+    "text_input",
+    ""
+   ],
+   [
+    "button",
+    "False"
+   ]
+  ],
+  "exceptions": []
+ },
+ "safe": {
+  "elements": [
+   [
+    "title",
+    "Phishing Detection and Prevention Tool"
+   ],
+   [
+    "caption",
+    "Detect phishing based on email content, headers, URLs, and remote attachments."
+   ],
+   [
+    "selectbox",
+    "Normal Policy (University / General)"
+   ],
+   [
+    "info",
+    "Policy thresholds \u2192 Suspicious \u2265 60, Phishing \u2265 80 (Risk Score out of 100)"
+   ],
+   [
+    "checkbox",
+    "True"
+   ],
+   [
+    "checkbox",
+    "True"
+   ],
+   [
+    "success",
+    "Email ML pipeline is available (LSTM and/or Logistic)."
+   ],
+   [
+    "success",
+    "Hybrid Meta model loaded (trained combiner)."
+   ],
+   [
+    "success",
+    "URL ML model loaded (Host+URL TF-IDF pipeline)."
+   ],
+   [
+    "expander",
+    "Debug: Loaded model status"
+   ],
+   [
+    "markdown",
+    "logistic: OK"
+   ],
+   [
+    "markdown",
+    "vectorizer: OK"
+   ],
+   [
+    "markdown",
+    "hybrid_meta: OK"
+   ],
+   [
+    "markdown",
+    "tokenizer: OK"
+   ],
+   [
+    "markdown",
+    "lstm: OK"
+   ],
+   [
+    "markdown",
+    "url_text_model: OK"
+   ],
+   [
+    "markdown",
+    "### Email Content Analysis"
+   ],
+   [
+    "text_input",
+    "Project meeting rescheduled to Friday"
+   ],
+   [
+    "text_area",
+    "Hi team,\n\nThe project review meeting has been moved to Friday at 3 PM in Lab 2.\n\nRegards,\nAnanya"
+   ],
+   [
+    "text_area",
+    "From: ananya@vit.ac.in\nReply-To: ananya@vit.ac.in\nReturn-Path: ananya@vit.ac.in"
+   ],
+   [
+    "text_area",
+    "https://vit.ac.in"
+   ],
+   [
+    "button",
+    "True"
+   ],
+   [
+    "subheader",
+    "Email Model Predictions"
+   ],
+   [
+    "markdown",
+    "**Logistic Regression Probability:** 0.12"
+   ],
+   [
+    "markdown",
+    "**LSTM Model Probability:** 0.00"
+   ],
+   [
+    "markdown",
+    "**Email Probability Used:** 0.00"
+   ],
+   [
+    "info",
+    "Using trained Hybrid Meta model (logistic + LSTM)."
+   ],
+   [
+    "subheader",
+    "Header Analysis"
+   ],
+   [
+    "markdown",
+    "**Header Risk:** Medium Risk *(confidence: medium)*"
+   ],
+   [
+    "markdown",
+    "- Received chain missing or incomplete."
+   ],
+   [
+    "subheader",
+    "URL Analysis"
+   ],
+   [
+    "markdown",
+    "https://vit.ac.in \u2192 Probability: **0.27**"
+   ],
+   [
+    "markdown",
+    "**Average URL Risk Probability:** 0.27"
+   ],
+   [
+    "markdown",
+    "### Final Combined Verdict (NIS Risk Score)"
+   ],
+   [
+    "markdown",
+    "**Risk Score:** 11.0 / 100"
+   ],
+   [
+    "markdown",
+    "**Threat Level:** LOW  *(Policy Mode: Normal Policy (University / General))*"
+   ],
+   [
+    "success",
+    "Safe Email (Risk: 11.0)"
+   ],
+   [
+    "markdown",
+    "### Attack Type Classification (NIS)"
+   ],
+   [
+    "markdown",
+    "This helps categorize the incident like a real SOC / security tool would:"
+   ],
+   [
+    "markdown",
+    "\u2022 Generic Phishing / Social Engineering"
+   ],
+   [
+    "markdown",
+    "### Recommended Actions (Prevention / Response)"
+   ],
+   [
+    "markdown",
+    "\u2022 Do not click links or open attachments from suspicious emails."
+   ],
+   [
+    "markdown",
+    "\u2022 Verify the request using an official channel (company website/app or known phone number)."
+   ],
+   [
+    "markdown",
+    "### Why this was flagged (NIS Indicators)"
+   ],
+   [
+    "markdown",
+    "**Email Indicators**"
+   ],
+   [
+    "markdown",
+    "- Email ML probability used: 0.00"
+   ],
+   [
+    "markdown",
+    "**Header/Spoofing Indicators**"
+   ],
+   [
+    "markdown",
+    "- Header risk: Medium Risk (confidence: medium)"
+   ],
+   [
+    "markdown",
+    "- Received chain missing or incomplete."
+   ],
+   [
+    "markdown",
+    "**URL/Domain Indicators**"
+   ],
+   [
+    "markdown",
+    "- Average URL ML probability: 0.27"
+   ],
+   [
+    "markdown",
+    "- Top URL host: vit.ac.in"
+   ],
+   [
+    "markdown",
+    "**Threat Intel Indicators**"
+   ],
+   [
+    "markdown",
+    "- Threat intel source: offline"
+   ],
+   [
+    "markdown",
+    "**Final Risk Reasoning**"
+   ],
+   [
+    "markdown",
+    "- Combined risk score: 11.0/100"
+   ],
+   [
+    "markdown",
+    "- Policy mode: Normal Policy (University / General)"
+   ],
+   [
+    "markdown",
+    "- Final score blends ML probabilities with NIS heuristic bumps (headers, URL/domain signals, intel)."
+   ],
+   [
+    "expander",
+    "Raw compact reasons"
+   ],
+   [
+    "markdown",
+    "- No strong indicators beyond model output."
+   ],
+   [
+    "expander",
+    "Technical Details (NIS Features)"
+   ],
+   [
+    "markdown",
+    "**Top URL used for explanation:** https://vit.ac.in"
+   ],
+   [
+    "json",
+    "{\"url_features\": {\"host\": \"vit.ac.in\", \"tld\": \"in\", \"url_len\": 17, \"has_https\": 1, \"has_ip_host\": 0, \"has_at\": 0, \"has_double_slash_in_path\": 0, \"num_subdomain_dots\": 2, \"keyword_count\": 0, \"keyword_hits\": [], \"host_entropy\": 2.725480556997868, \"is_shortener\": 0, \"suspicious_tld\": 0, \"high_digit_ratio\": 0, \"many_hyphens\": 0}, \"email_features\": {\"urgency_hits\": [], \"cred_hits\": [], \"attach_hits\": [], \"reply_to_differs\": 0, \"has_headers\": 1}, \"threat_intel\": {\"host\": \"vit.ac.in\", \"tld\": \"in\", \"is_shortener\": 0, \"suspicious_tld\": 0, \"brand_hits\": [], \"brand_impersonation\": 0, \"source\": \"offline\"}, \"policy\": \"Normal Policy (University / General)\", \"policy_thresholds\": {\"suspicious\": 60.0, \"phishing\": 80.0}, \"attack_types\": [\"Generic Phishing / Social Engineering\"], \"header_details\": {\"risk\": \"Medium Risk\", \"confidence\": \"medium\", \"manual_or_incomplete\": false, \"score\": 1.0, \"issues\": [\"Received chain missing or incomplete.\"]}, \"risk_score_raw\": 10.983127496554093, \"risk_score_calibrated\": 10.983127496554093}"
+   ],
+   [
+    "expander",
+    "Online Threat Intel (optional)"
+   ],
+   [
+    "markdown",
+    "**VirusTotal:** API key not provided"
+   ],
+   [
+    "markdown",
+    "**AbuseIPDB:** (host is not an IP)"
+   ],
+   [
+    "markdown",
+    "---"
+   ],
+   [
+    "subheader",
+    "Feedback"
+   ],
+   [
+    "markdown",
+    "Was this classification correct?"
+   ],
+   [
+    "radio",
+    "Yes"
+   ],
+   [
+    "button",
+    "False"
+   ],
+   [
+    "markdown",
+    "### Scan History (last 20)"
+   ],
+   [
+    "arrow_data_frame",
+    "              timestamp  ...                                    subject_preview\n51  <TS>  ...                                               None\n52  <TS>  ...                                               None\n53  <TS>  ...                                               None\n54  <TS>  ...  Urgent: Your university account will be suspen...\n55  <TS>  ...              Project meeting rescheduled to Friday\n56  <TS>  ...              Important notice from accounts office\n57  <TS>  ...  Urgent: Your university account will be suspen...\n58  <TS>  ...              Project meeting rescheduled to Friday\n59  <TS>  ...              Project meeting rescheduled to Friday\n60  <TS>  ...              Project meeting rescheduled to Friday\n61  <TS>  ...  Urgent: Your university account will be suspen...\n62  <TS>  ...              Project meeting rescheduled to Friday\n63  <TS>  ...  Urgent: Your university account will be suspen...\n64  <TS>  ...                  Shared document for urgent review\n65  <TS>  ...                                  Updated timetable\n66  <TS>  ...                                  Updated timetable\n67  <TS>  ...              Important notice from accounts office\n68  <TS>  ...                       Important verification links\n69  <TS>  ...                       Important verification links\n70  <TS>  ...              Project meeting rescheduled to Friday\n\n[20 rows x 9 columns]"
+   ],
+   [
+    "markdown",
+    "---"
+   ],
+   [
+    "markdown",
+    "### Remote Attachment URL Scan (Optional)"
+   ],
+   [
+    "text_input",
+    ""
+   ],
+   [
+    "button",
+    "False"
+   ]
+  ],
+  "exceptions": []
+ },
+ "strict": {
+  "elements": [
+   [
+    "title",
+    "Phishing Detection and Prevention Tool"
+   ],
+   [
+    "caption",
+    "Detect phishing based on email content, headers, URLs, and remote attachments."
+   ],
+   [
+    "selectbox",
+    "Strict Policy (Banking / Enterprise)"
+   ],
+   [
+    "info",
+    "Policy thresholds \u2192 Suspicious \u2265 50, Phishing \u2265 70 (Risk Score out of 100)"
+   ],
+   [
+    "checkbox",
+    "True"
+   ],
+   [
+    "checkbox",
+    "True"
+   ],
+   [
+    "success",
+    "Email ML pipeline is available (LSTM and/or Logistic)."
+   ],
+   [
+    "success",
+    "Hybrid Meta model loaded (trained combiner)."
+   ],
+   [
+    "success",
+    "URL ML model loaded (Host+URL TF-IDF pipeline)."
+   ],
+   [
+    "expander",
+    "Debug: Loaded model status"
+   ],
+   [
+    "markdown",
+    "logistic: OK"
+   ],
+   [
+    "markdown",
+    "vectorizer: OK"
+   ],
+   [
+    "markdown",
+    "hybrid_meta: OK"
+   ],
+   [
+    "markdown",
+    "tokenizer: OK"
+   ],
+   [
+    "markdown",
+    "lstm: OK"
+   ],
+   [
+    "markdown",
+    "url_text_model: OK"
+   ],
+   [
+    "markdown",
+    "### Email Content Analysis"
+   ],
+   [
+    "text_input",
+    "Invoice payment"
+   ],
+   [
+    "text_area",
+    "Please confirm your bank password to reset"
+   ],
+   [
+    "text_area",
+    ""
+   ],
+   [
+    "text_area",
+    "http://login-bank-update.tk"
+   ],
+   [
+    "button",
+    "True"
+   ],
+   [
+    "subheader",
+    "Email Model Predictions"
+   ],
+   [
+    "markdown",
+    "**Logistic Regression Probability:** 0.92"
+   ],
+   [
+    "markdown",
+    "**LSTM Model Probability:** 1.00"
+   ],
+   [
+    "markdown",
+    "**Email Probability Used:** 1.00"
+   ],
+   [
+    "info",
+    "Using trained Hybrid Meta model (logistic + LSTM)."
+   ],
+   [
+    "subheader",
+    "Header Analysis"
+   ],
+   [
+    "markdown",
+    "**Header Risk:** Low Risk *(confidence: low)*"
+   ],
+   [
+    "markdown",
+    "- No headers provided."
+   ],
+   [
+    "subheader",
+    "URL Analysis"
+   ],
+   [
+    "markdown",
+    "http://login-bank-update.tk \u2192 Probability: **0.99**"
+   ],
+   [
+    "markdown",
+    "**Average URL Risk Probability:** 0.99"
+   ],
+   [
+    "markdown",
+    "### Final Combined Verdict (NIS Risk Score)"
+   ],
+   [
+    "markdown",
+    "**Risk Score:** 100.0 / 100"
+   ],
+   [
+    "markdown",
+    "**Threat Level:** CRITICAL  *(Policy Mode: Strict Policy (Banking / Enterprise))*"
+   ],
+   [
+    "error",
+    "Phishing Detected (Risk: 100.0)"
+   ],
+   [
+    "markdown",
+    "### Attack Type Classification (NIS)"
+   ],
+   [
+    "markdown",
+    "This helps categorize the incident like a real SOC / security tool would:"
+   ],
+   [
+    "markdown",
+    "\u2022 Credential Harvesting"
+   ],
+   [
+    "markdown",
+    "\u2022 Brand Impersonation"
+   ],
+   [
+    "markdown",
+    "\u2022 Attachment Delivery (Possible Malware)"
+   ],
+   [
+    "markdown",
+    "### Recommended Actions (Prevention / Response)"
+   ],
+   [
+    "markdown",
+    "\u2022 Do not click links or open attachments from suspicious emails."
+   ],
+   [
+    "markdown",
+    "\u2022 Verify the request using an official channel (company website/app or known phone number)."
+   ],
+   [
+    "markdown",
+    "\u2022 Report the email to IT/SOC immediately (phishing incident)."
+   ],
+   [
+    "markdown",
+    "\u2022 Block the sender domain and URL at email gateway / DNS filtering (if available)."
+   ],
+   [
+    "markdown",
+    "\u2022 If you already clicked: change password immediately and enable MFA/2FA."
+   ],
+   [
+    "markdown",
+    "\u2022 Check for similar emails in inboxes (potential campaign) and warn users."
+   ],
+   [
+    "markdown",
+    "\u2022 Reset credentials for impacted accounts and monitor login attempts for anomalies."
+   ],
+   [
+    "markdown",
+    "\u2022 Quarantine the attachment and scan in a sandbox / AV before any access."
+   ],
+   [
+    "markdown",
+    "### Why this was flagged (NIS Indicators)"
+   ],
+   [
+    "markdown",
+    "**Email Indicators**"
+   ],
+   [
+    "markdown",
+    "- Email ML probability used: 1.00"
+   ],
+   [
+    "markdown",
+    "- Credential cues: password"
+   ],
+   [
+    "markdown",
+    "- Attachment cues: invoice, payment"
+   ],
+   [
+    "markdown",
+    "**Header/Spoofing Indicators**"
+   ],
+   [
+    "markdown",
+    "- Header risk: Low Risk (confidence: low)"
+   ],
+   [
+    "markdown",
+    "- No headers provided."
+   ],
+   [
+    "markdown",
+    "**URL/Domain Indicators**"
+   ],
+   [
+    "markdown",
+    "- Average URL ML probability: 0.99"
+   ],
+   [
+    "markdown",
+    "- Top URL host: login-bank-update.tk"
+   ],
+   [
+    "markdown",
+    "- Suspicious TLD detected: .tk"
+   ],
+   [
+    "markdown",
+    "- Suspicious URL keywords: login, update, bank"
+   ],
+   [
+    "markdown",
+    "**Threat Intel Indicators**"
+   ],
+   [
+    "markdown",
+    "- Threat intel source: offline"
+   ],
+   [
+    "markdown",
+    "- Brand hits: bank"
+   ],
+   [
+    "markdown",
+    "**Final Risk Reasoning**"
+   ],
+   [
+    "markdown",
+    "- Combined risk score: 100.0/100"
+   ],
+   [
+    "markdown",
+    "- Policy mode: Strict Policy (Banking / Enterprise)"
+   ],
+   [
+    "markdown",
+    "- Final score blends ML probabilities with NIS heuristic bumps (headers, URL/domain signals, intel)."
+   ],
+   [
+    "expander",
+    "Raw compact reasons"
+   ],
+   [
+    "markdown",
+    "- Email ML probability is high (1.00)."
+   ],
+   [
+    "markdown",
+    "- URL ML probability is high (0.99)."
+   ],
+   [
+    "markdown",
+    "- Suspicious TLD detected (.tk)."
+   ],
+   [
+    "markdown",
+    "- High domain randomness/entropy detected (possible generated domain)."
+   ],
+   [
+    "markdown",
+    "- Multiple suspicious keywords found in URL: login, update, bank."
+   ],
+   [
+    "markdown",
+    "- Credential-harvesting cues detected: password."
+   ],
+   [
+    "expander",
+    "Technical Details (NIS Features)"
+   ],
+   [
+    "markdown",
+    "**Top URL used for explanation:** http://login-bank-update.tk"
+   ],
+   [
+    "json",
+    "{\"url_features\": {\"host\": \"login-bank-update.tk\", \"tld\": \"tk\", \"url_len\": 27, \"has_https\": 0, \"has_ip_host\": 0, \"has_at\": 0, \"has_double_slash_in_path\": 0, \"num_subdomain_dots\": 1, \"keyword_count\": 3, \"keyword_hits\": [\"login\", \"update\", \"bank\"], \"host_entropy\": 3.821928094887362, \"is_shortener\": 0, \"suspicious_tld\": 1, \"high_digit_ratio\": 0, \"many_hyphens\": 0}, \"email_features\": {\"urgency_hits\": [], \"cred_hits\": [\"password\"], \"attach_hits\": [\"invoice\", \"payment\"], \"reply_to_differs\": 0, \"has_headers\": 0}, \"threat_intel\": {\"host\": \"login-bank-update.tk\", \"tld\": \"tk\", \"is_shortener\": 0, \"suspicious_tld\": 1, \"brand_hits\": [\"bank\"], \"brand_impersonation\": 0, \"source\": \"offline\"}, \"policy\": \"Strict Policy (Banking / Enterprise)\", \"policy_thresholds\": {\"suspicious\": 50.0, \"phishing\": 70.0}, \"attack_types\": [\"Credential Harvesting\", \"Brand Impersonation\", \"Attachment Delivery (Possible Malware)\"], \"header_details\": {\"risk\": \"Low Risk\", \"confidence\": \"low\", \"manual_or_incomplete\": false, \"score\": 0.0, \"issues\": [\"No headers provided.\"]}, \"risk_score_raw\": 100.0, \"risk_score_calibrated\": 100.0}"
+   ],
+   [
+    "expander",
+    "Online Threat Intel (optional)"
+   ],
+   [
+    "markdown",
+    "**VirusTotal:** API key not provided"
+   ],
+   [
+    "markdown",
+    "**AbuseIPDB:** (host is not an IP)"
+   ],
+   [
+    "markdown",
+    "---"
+   ],
+   [
+    "subheader",
+    "Feedback"
+   ],
+   [
+    "markdown",
+    "Was this classification correct?"
+   ],
+   [
+    "radio",
+    "Yes"
+   ],
+   [
+    "button",
+    "False"
+   ],
+   [
+    "markdown",
+    "### Scan History (last 20)"
+   ],
+   [
+    "arrow_data_frame",
+    "              timestamp  ...                                    subject_preview\n51  <TS>  ...                                               None\n52  <TS>  ...                                               None\n53  <TS>  ...                                               None\n54  <TS>  ...  Urgent: Your university account will be suspen...\n55  <TS>  ...              Project meeting rescheduled to Friday\n56  <TS>  ...              Important notice from accounts office\n57  <TS>  ...  Urgent: Your university account will be suspen...\n58  <TS>  ...              Project meeting rescheduled to Friday\n59  <TS>  ...              Project meeting rescheduled to Friday\n60  <TS>  ...              Project meeting rescheduled to Friday\n61  <TS>  ...  Urgent: Your university account will be suspen...\n62  <TS>  ...              Project meeting rescheduled to Friday\n63  <TS>  ...  Urgent: Your university account will be suspen...\n64  <TS>  ...                  Shared document for urgent review\n65  <TS>  ...                                  Updated timetable\n66  <TS>  ...                                  Updated timetable\n67  <TS>  ...              Important notice from accounts office\n68  <TS>  ...                       Important verification links\n69  <TS>  ...                       Important verification links\n70  <TS>  ...                                    Invoice payment\n\n[20 rows x 9 columns]"
+   ],
+   [
+    "markdown",
+    "---"
+   ],
+   [
+    "markdown",
+    "### Remote Attachment URL Scan (Optional)"
+   ],
+   [
+    "text_input",
+    ""
+   ],
+   [
+    "button",
+    "False"
+   ]
+  ],
+  "exceptions": []
+ },
+ "urgent": {
+  "elements": [
+   [
+    "title",
+    "Phishing Detection and Prevention Tool"
+   ],
+   [
+    "caption",
+    "Detect phishing based on email content, headers, URLs, and remote attachments."
+   ],
+   [
+    "selectbox",
+    "Normal Policy (University / General)"
+   ],
+   [
+    "info",
+    "Policy thresholds \u2192 Suspicious \u2265 60, Phishing \u2265 80 (Risk Score out of 100)"
+   ],
+   [
+    "checkbox",
+    "True"
+   ],
+   [
+    "checkbox",
+    "True"
+   ],
+   [
+    "success",
+    "Email ML pipeline is available (LSTM and/or Logistic)."
+   ],
+   [
+    "success",
+    "Hybrid Meta model loaded (trained combiner)."
+   ],
+   [
+    "success",
+    "URL ML model loaded (Host+URL TF-IDF pipeline)."
+   ],
+   [
+    "expander",
+    "Debug: Loaded model status"
+   ],
+   [
+    "markdown",
+    "logistic: OK"
+   ],
+   [
+    "markdown",
+    "vectorizer: OK"
+   ],
+   [
+    "markdown",
+    "hybrid_meta: OK"
+   ],
+   [
+    "markdown",
+    "tokenizer: OK"
+   ],
+   [
+    "markdown",
+    "lstm: OK"
+   ],
+   [
+    "markdown",
+    "url_text_model: OK"
+   ],
+   [
+    "markdown",
+    "### Email Content Analysis"
+   ],
+   [
+    "text_input",
+    "Urgent: Your university account will be suspended today"
+   ],
+   [
+    "text_area",
+    "Dear Student,\n\nYour account has been flagged. You must verify your account immediately or access will be permanently suspended today.\nClick below to verify now:"
+   ],
+   [
+    "text_area",
+    "From: support@vit-security.com\nReply-To: verifyaccount@secure-login-alert.com\nReturn-Path: noreply@mailer-check.net"
+   ],
+   [
+    "text_area",
+    "http://secure-login-verification-paypal.com-account-update.xyz/login\nhttp://192.168.1.10/login\nhttps://bit.ly/3abcde"
+   ],
+   [
+    "button",
+    "True"
+   ],
+   [
+    "subheader",
+    "Email Model Predictions"
+   ],
+   [
+    "markdown",
+    "**Logistic Regression Probability:** 0.63"
+   ],
+   [
+    "markdown",
+    "**LSTM Model Probability:** 1.00"
+   ],
+   [
+    "markdown",
+    "**Email Probability Used:** 0.99"
+   ],
+   [
+    "info",
+    "Using trained Hybrid Meta model (logistic + LSTM)."
+   ],
+   [
+    "subheader",
+    "Header Analysis"
+   ],
+   [
+    "markdown",
+    "**Header Risk:** High Risk *(confidence: high)*"
+   ],
+   [
+    "markdown",
+    "- Received chain missing or incomplete."
+   ],
+   [
+    "markdown",
+    "- Reply-To differs from From \u2014 suspicious redirection."
+   ],
+   [
+    "subheader",
+    "URL Analysis"
+   ],
+   [
+    "markdown",
+    "http://secure-login-verification-paypal.com-account-update.xyz/login \u2192 Probability: **1.00**"
+   ],
+   [
+    "markdown",
+    "http://192.168.1.10/login \u2192 Probability: **1.00**"
+   ],
+   [
+    "markdown",
+    "https://bit.ly/3abcde \u2192 Probability: **0.32**"
+   ],
+   [
+    "markdown",
+    "**Average URL Risk Probability:** 0.77"
+   ],
+   [
+    "markdown",
+    "### Final Combined Verdict (NIS Risk Score)"
+   ],
+   [
+    "markdown",
+    "**Risk Score:** 100.0 / 100"
+   ],
+   [
+    "markdown",
+    "**Threat Level:** CRITICAL  *(Policy Mode: Normal Policy (University / General))*"
+   ],
+   [
+    "error",
+    "Phishing Detected (Risk: 100.0)"
+   ],
+   [
+    "markdown",
+    "### Attack Type Classification (NIS)"
+   ],
+   [
+    "markdown",
+    "This helps categorize the incident like a real SOC / security tool would:"
+   ],
+   [
+    "markdown",
+    "\u2022 Credential Harvesting"
+   ],
+   [
+    "markdown",
+    "\u2022 Spoofing / Header Manipulation"
+   ],
+   [
+    "markdown",
+    "\u2022 IP-based URL / Suspicious Hosting"
+   ],
+   [
+    "markdown",
+    "### Recommended Actions (Prevention / Response)"
+   ],
+   [
+    "markdown",
+    "\u2022 Do not click links or open attachments from suspicious emails."
+   ],
+   [
+    "markdown",
+    "\u2022 Verify the request using an official channel (company website/app or known phone number)."
+   ],
+   [
+    "markdown",
+    "\u2022 Report the email to IT/SOC immediately (phishing incident)."
+   ],
+   [
+    "markdown",
+    "\u2022 Block the sender domain and URL at email gateway / DNS filtering (if available)."
+   ],
+   [
+    "markdown",
+    "\u2022 If you already clicked: change password immediately and enable MFA/2FA."
+   ],
+   [
+    "markdown",
+    "\u2022 Check for similar emails in inboxes (potential campaign) and warn users."
+   ],
+   [
+    "markdown",
+    "\u2022 Review SPF/DKIM/DMARC alignment on the sending domain (spoofing control)."
+   ],
+   [
+    "markdown",
+    "\u2022 Reset credentials for impacted accounts and monitor login attempts for anomalies."
+   ],
+   [
+    "markdown",
+    "### Why this was flagged (NIS Indicators)"
+   ],
+   [
+    "markdown",
+    "**Email Indicators**"
+   ],
+   [
+    "markdown",
+    "- Email ML probability used: 0.99"
+   ],
+   [
+    "markdown",
+    "- Urgency cues: urgent, immediately"
+   ],
+   [
+    "markdown",
+    "- Credential cues: verify"
+   ],
+   [
+    "markdown",
+    "**Header/Spoofing Indicators**"
+   ],
+   [
+    "markdown",
+    "- Header risk: High Risk (confidence: high)"
+   ],
+   [
+    "markdown",
+    "- Received chain missing or incomplete."
+   ],
+   [
+    "markdown",
+    "- Reply-To differs from From \u2014 suspicious redirection."
+   ],
+   [
+    "markdown",
+    "**URL/Domain Indicators**"
+   ],
+   [
+    "markdown",
+    "- Average URL ML probability: 0.77"
+   ],
+   [
+    "markdown",
+    "- Top URL host: 192.168.1.10"
+   ],
+   [
+    "markdown",
+    "- Top URL uses IP address as host."
+   ],
+   [
+    "markdown",
+    "- Suspicious URL keywords: login"
+   ],
+   [
+    "markdown",
+    "**Threat Intel Indicators**"
+   ],
+   [
+    "markdown",
+    "- Threat intel source: offline"
+   ],
+   [
+    "markdown",
+    "**Final Risk Reasoning**"
+   ],
+   [
+    "markdown",
+    "- Combined risk score: 100.0/100"
+   ],
+   [
+    "markdown",
+    "- Policy mode: Normal Policy (University / General)"
+   ],
+   [
+    "markdown",
+    "- Final score blends ML probabilities with NIS heuristic bumps (headers, URL/domain signals, intel)."
+   ],
+   [
+    "expander",
+    "Raw compact reasons"
+   ],
+   [
+    "markdown",
+    "- Email ML probability is high (0.99)."
+   ],
+   [
+    "markdown",
+    "- URL ML probability is high (0.77)."
+   ],
+   [
+    "markdown",
+    "- Header analysis indicates spoofing risk."
+   ],
+   [
+    "markdown",
+    "- URL host is an IP address (common phishing indicator)."
+   ],
+   [
+    "markdown",
+    "- Reply-To differs from From (redirection tactic)."
+   ],
+   [
+    "markdown",
+    "- Urgency language detected: urgent, immediately."
+   ],
+   [
+    "markdown",
+    "- Credential-harvesting cues detected: verify."
+   ],
+   [
+    "expander",
+    "Technical Details (NIS Features)"
+   ],
+   [
+    "markdown",
+    "**Top URL used for explanation:** http://192.168.1.10/login"
+   ],
+   [
+    "json",
+    "{\"url_features\": {\"host\": \"192.168.1.10\", \"tld\": \"10\", \"url_len\": 25, \"has_https\": 0, \"has_ip_host\": 1, \"has_at\": 0, \"has_double_slash_in_path\": 0, \"num_subdomain_dots\": 3, \"keyword_count\": 1, \"keyword_hits\": [\"login\"], \"host_entropy\": 2.5220552088742005, \"is_shortener\": 0, \"suspicious_tld\": 0, \"high_digit_ratio\": 1, \"many_hyphens\": 0}, \"email_features\": {\"urgency_hits\": [\"urgent\", \"immediately\"], \"cred_hits\": [\"verify\"], \"attach_hits\": [], \"reply_to_differs\": 1, \"has_headers\": 1}, \"threat_intel\": {\"host\": \"192.168.1.10\", \"tld\": \"10\", \"is_shortener\": 0, \"suspicious_tld\": 0, \"brand_hits\": [], \"brand_impersonation\": 0, \"source\": \"offline\"}, \"policy\": \"Normal Policy (University / General)\", \"policy_thresholds\": {\"suspicious\": 60.0, \"phishing\": 80.0}, \"attack_types\": [\"Credential Harvesting\", \"Spoofing / Header Manipulation\", \"IP-based URL / Suspicious Hosting\"], \"header_details\": {\"risk\": \"High Risk\", \"confidence\": \"high\", \"manual_or_incomplete\": false, \"score\": 4.0, \"issues\": [\"Received chain missing or incomplete.\", \"Reply-To differs from From \\u2014 suspicious redirection.\"]}, \"risk_score_raw\": 100.0, \"risk_score_calibrated\": 100.0}"
+   ],
+   [
+    "expander",
+    "Online Threat Intel (optional)"
+   ],
+   [
+    "markdown",
+    "**VirusTotal:** API key not provided"
+   ],
+   [
+    "markdown",
+    "**AbuseIPDB:** API key not provided"
+   ],
+   [
+    "markdown",
+    "---"
+   ],
+   [
+    "subheader",
+    "Feedback"
+   ],
+   [
+    "markdown",
+    "Was this classification correct?"
+   ],
+   [
+    "radio",
+    "Yes"
+   ],
+   [
+    "button",
+    "False"
+   ],
+   [
+    "markdown",
+    "### Scan History (last 20)"
+   ],
+   [
+    "arrow_data_frame",
+    "              timestamp  ...                                    subject_preview\n51  <TS>  ...                                               None\n52  <TS>  ...                                               None\n53  <TS>  ...                                               None\n54  <TS>  ...  Urgent: Your university account will be suspen...\n55  <TS>  ...              Project meeting rescheduled to Friday\n56  <TS>  ...              Important notice from accounts office\n57  <TS>  ...  Urgent: Your university account will be suspen...\n58  <TS>  ...              Project meeting rescheduled to Friday\n59  <TS>  ...              Project meeting rescheduled to Friday\n60  <TS>  ...              Project meeting rescheduled to Friday\n61  <TS>  ...  Urgent: Your university account will be suspen...\n62  <TS>  ...              Project meeting rescheduled to Friday\n63  <TS>  ...  Urgent: Your university account will be suspen...\n64  <TS>  ...                  Shared document for urgent review\n65  <TS>  ...                                  Updated timetable\n66  <TS>  ...                                  Updated timetable\n67  <TS>  ...              Important notice from accounts office\n68  <TS>  ...                       Important verification links\n69  <TS>  ...                       Important verification links\n70  <TS>  ...  Urgent: Your university account will be suspen...\n\n[20 rows x 9 columns]"
+   ],
+   [
+    "markdown",
+    "---"
+   ],
+   [
+    "markdown",
+    "### Remote Attachment URL Scan (Optional)"
+   ],
+   [
+    "text_input",
+    ""
+   ],
+   [
+    "button",
+    "False"
+   ]
+  ],
+  "exceptions": []
+ },
+ "urls_only": {
+  "elements": [
+   [
+    "title",
+    "Phishing Detection and Prevention Tool"
+   ],
+   [
+    "caption",
+    "Detect phishing based on email content, headers, URLs, and remote attachments."
+   ],
+   [
+    "selectbox",
+    "Normal Policy (University / General)"
+   ],
+   [
+    "info",
+    "Policy thresholds \u2192 Suspicious \u2265 60, Phishing \u2265 80 (Risk Score out of 100)"
+   ],
+   [
+    "checkbox",
+    "True"
+   ],
+   [
+    "checkbox",
+    "True"
+   ],
+   [
+    "success",
+    "Email ML pipeline is available (LSTM and/or Logistic)."
+   ],
+   [
+    "success",
+    "Hybrid Meta model loaded (trained combiner)."
+   ],
+   [
+    "success",
+    "URL ML model loaded (Host+URL TF-IDF pipeline)."
+   ],
+   [
+    "expander",
+    "Debug: Loaded model status"
+   ],
+   [
+    "markdown",
+    "logistic: OK"
+   ],
+   [
+    "markdown",
+    "vectorizer: OK"
+   ],
+   [
+    "markdown",
+    "hybrid_meta: OK"
+   ],
+   [
+    "markdown",
+    "tokenizer: OK"
+   ],
+   [
+    "markdown",
+    "lstm: OK"
+   ],
+   [
+    "markdown",
+    "url_text_model: OK"
+   ],
+   [
+    "markdown",
+    "### Email Content Analysis"
+   ],
+   [
+    "text_input",
+    ""
+   ],
+   [
+    "text_area",
+    ""
+   ],
+   [
+    "text_area",
+    ""
+   ],
+   [
+    "text_area",
+    "WWW.Example.com/Path/\nhttp://xn--pypal-4ve.com/verify?otp=1"
+   ],
+   [
+    "button",
+    "True"
+   ],
+   [
+    "info",
+    "No email content provided - skipping email model prediction."
+   ],
+   [
+    "subheader",
+    "Header Analysis"
+   ],
+   [
+    "markdown",
+    "**Header Risk:** Low Risk *(confidence: low)*"
+   ],
+   [
+    "markdown",
+    "- No headers provided."
+   ],
+   [
+    "subheader",
+    "URL Analysis"
+   ],
+   [
+    "markdown",
+    "WWW.Example.com/Path/ \u2192 Probability: **0.12**"
+   ],
+   [
+    "markdown",
+    "http://xn--pypal-4ve.com/verify?otp=1 \u2192 Probability: **0.92**"
+   ],
+   [
+    "markdown",
+    "**Average URL Risk Probability:** 0.52"
+   ],
+   [
+    "markdown",
+    "### Final Combined Verdict (NIS Risk Score)"
+   ],
+   [
+    "markdown",
+    "**Risk Score:** 54.8 / 100"
+   ],
+   [
+    "markdown",
+    "**Threat Level:** LOW  *(Policy Mode: Normal Policy (University / General))*"
+   ],
+   [
+    "success",
+    "Safe Email (Risk: 54.8)"
+   ],
+   [
+    "markdown",
+    "### Attack Type Classification (NIS)"
+   ],
+   [
+    "markdown",
+    "This helps categorize the incident like a real SOC / security tool would:"
+   ],
+   [
+    "markdown",
+    "\u2022 Credential Harvesting"
+   ],
+   [
+    "markdown",
+    "### Recommended Actions (Prevention / Response)"
+   ],
+   [
+    "markdown",
+    "\u2022 Do not click links or open attachments from suspicious emails."
+   ],
+   [
+    "markdown",
+    "\u2022 Verify the request using an official channel (company website/app or known phone number)."
+   ],
+   [
+    "markdown",
+    "\u2022 Reset credentials for impacted accounts and monitor login attempts for anomalies."
+   ],
+   [
+    "markdown",
+    "### Why this was flagged (NIS Indicators)"
+   ],
+   [
+    "markdown",
+    "**Email Indicators**"
+   ],
+   [
+    "markdown",
+    "- Email ML probability used: 0.50"
+   ],
+   [
+    "markdown",
+    "**Header/Spoofing Indicators**"
+   ],
+   [
+    "markdown",
+    "- Header risk: Low Risk (confidence: low)"
+   ],
+   [
+    "markdown",
+    "- No headers provided."
+   ],
+   [
+    "markdown",
+    "**URL/Domain Indicators**"
+   ],
+   [
+    "markdown",
+    "- Average URL ML probability: 0.52"
+   ],
+   [
+    "markdown",
+    "- Top URL host: xn--pypal-4ve.com"
+   ],
+   [
+    "markdown",
+    "- Suspicious URL keywords: verify, otp"
+   ],
+   [
+    "markdown",
+    "**Threat Intel Indicators**"
+   ],
+   [
+    "markdown",
+    "- Threat intel source: offline"
+   ],
+   [
+    "markdown",
+    "**Final Risk Reasoning**"
+   ],
+   [
+    "markdown",
+    "- Combined risk score: 54.8/100"
+   ],
+   [
+    "markdown",
+    "- Policy mode: Normal Policy (University / General)"
+   ],
+   [
+    "markdown",
+    "- Final score blends ML probabilities with NIS heuristic bumps (headers, URL/domain signals, intel)."
+   ],
+   [
+    "expander",
+    "Raw compact reasons"
+   ],
+   [
+    "markdown",
+    "- Multiple suspicious keywords found in URL: verify, otp."
+   ],
+   [
+    "expander",
+    "Technical Details (NIS Features)"
+   ],
+   [
+    "markdown",
+    "**Top URL used for explanation:** http://xn--pypal-4ve.com/verify?otp=1"
+   ],
+   [
+    "json",
+    "{\"url_features\": {\"host\": \"xn--pypal-4ve.com\", \"tld\": \"com\", \"url_len\": 37, \"has_https\": 0, \"has_ip_host\": 0, \"has_at\": 0, \"has_double_slash_in_path\": 0, \"num_subdomain_dots\": 1, \"keyword_count\": 2, \"keyword_hits\": [\"verify\", \"otp\"], \"host_entropy\": 3.6901165175936654, \"is_shortener\": 0, \"suspicious_tld\": 0, \"high_digit_ratio\": 0, \"many_hyphens\": 1}, \"email_features\": {\"urgency_hits\": [], \"cred_hits\": [], \"attach_hits\": [], \"reply_to_differs\": 0, \"has_headers\": 0}, \"threat_intel\": {\"host\": \"xn--pypal-4ve.com\", \"tld\": \"com\", \"is_shortener\": 0, \"suspicious_tld\": 0, \"brand_hits\": [], \"brand_impersonation\": 0, \"source\": \"offline\"}, \"policy\": \"Normal Policy (University / General)\", \"policy_thresholds\": {\"suspicious\": 60.0, \"phishing\": 80.0}, \"attack_types\": [\"Credential Harvesting\"], \"header_details\": {\"risk\": \"Low Risk\", \"confidence\": \"low\", \"manual_or_incomplete\": false, \"score\": 0.0, \"issues\": [\"No headers provided.\"]}, \"risk_score_raw\": 54.83420198966757, \"risk_score_calibrated\": 54.83420198966757}"
+   ],
+   [
+    "expander",
+    "Online Threat Intel (optional)"
+   ],
+   [
+    "markdown",
+    "**VirusTotal:** API key not provided"
+   ],
+   [
+    "markdown",
+    "**AbuseIPDB:** (host is not an IP)"
+   ],
+   [
+    "markdown",
+    "---"
+   ],
+   [
+    "subheader",
+    "Feedback"
+   ],
+   [
+    "markdown",
+    "Was this classification correct?"
+   ],
+   [
+    "radio",
+    "Yes"
+   ],
+   [
+    "button",
+    "False"
+   ],
+   [
+    "markdown",
+    "### Scan History (last 20)"
+   ],
+   [
+    "arrow_data_frame",
+    "              timestamp  ...                                    subject_preview\n51  <TS>  ...                                               None\n52  <TS>  ...                                               None\n53  <TS>  ...                                               None\n54  <TS>  ...  Urgent: Your university account will be suspen...\n55  <TS>  ...              Project meeting rescheduled to Friday\n56  <TS>  ...              Important notice from accounts office\n57  <TS>  ...  Urgent: Your university account will be suspen...\n58  <TS>  ...              Project meeting rescheduled to Friday\n59  <TS>  ...              Project meeting rescheduled to Friday\n60  <TS>  ...              Project meeting rescheduled to Friday\n61  <TS>  ...  Urgent: Your university account will be suspen...\n62  <TS>  ...              Project meeting rescheduled to Friday\n63  <TS>  ...  Urgent: Your university account will be suspen...\n64  <TS>  ...                  Shared document for urgent review\n65  <TS>  ...                                  Updated timetable\n66  <TS>  ...                                  Updated timetable\n67  <TS>  ...              Important notice from accounts office\n68  <TS>  ...                       Important verification links\n69  <TS>  ...                       Important verification links\n70  <TS>  ...                                               None\n\n[20 rows x 9 columns]"
+   ],
+   [
+    "markdown",
+    "---"
+   ],
+   [
+    "markdown",
+    "### Remote Attachment URL Scan (Optional)"
+   ],
+   [
+    "text_input",
+    ""
+   ],
+   [
+    "button",
+    "False"
+   ]
+  ],
+  "exceptions": []
+ }
+}

@@ -1,4 +1,4 @@
-# utils/risk_scoring.py
+# core/risk_scoring.py
 def clamp(x, lo=0.0, hi=100.0):
     return max(lo, min(hi, x))
 

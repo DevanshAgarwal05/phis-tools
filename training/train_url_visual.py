@@ -155,6 +155,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--data", required=True, help="Merged URL dataset path (csv/xlsx).")
     parser.add_argument("--out_dir", default="models", help="Output directory for models.")
-    parser.add_argument("--graph_dir", default="graphs", help="Output directory for graphs.")
+    parser.add_argument("--graph_dir", default="docs/graphs", help="Output directory for graphs.")
     args = parser.parse_args()
     main(args.data, args.out_dir, args.graph_dir)

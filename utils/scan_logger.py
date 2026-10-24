@@ -3,7 +3,9 @@ import os
 import csv
 from datetime import datetime
 
-LOG_PATH_DEFAULT = os.path.join("logs", "scan_logs.csv")
+from config.settings import SCAN_LOG_PATH
+
+LOG_PATH_DEFAULT = str(SCAN_LOG_PATH)
 
 def ensure_log_file(path: str = LOG_PATH_DEFAULT):
     os.makedirs(os.path.dirname(path), exist_ok=True)

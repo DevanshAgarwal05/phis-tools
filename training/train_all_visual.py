@@ -160,9 +160,9 @@ def extract_url_features(url: str):
 # MAIN
 # ========================
 def main(email_path, url_path, out_dir):
-    base_dir = os.path.dirname(os.path.abspath(__file__))
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root (script lives in training/)
     model_dir = os.path.join(base_dir, out_dir)
-    graph_dir = os.path.join(base_dir, "graphs")
+    graph_dir = os.path.join(base_dir, "docs", "graphs")
     ensure_dir(model_dir)
     ensure_dir(graph_dir)
 
