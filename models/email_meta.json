@@ -1,0 +1,5 @@
+{
+  "max_words": 5000,
+  "max_len": 200,
+  "embed_dim": 64
+}

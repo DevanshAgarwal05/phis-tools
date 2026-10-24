@@ -1,0 +1,244 @@
+1. Clearly safe normal email
+
+Subject:
+
+Project meeting rescheduled to Friday
+
+Email Body:
+
+Hi team,
+
+The project review meeting has been moved to Friday at 3 PM in Lab 2.
+Please bring your progress notes and updated slides.
+
+Regards,
+Ananya
+
+Headers:
+
+From: ananya@vit.ac.in
+Reply-To: ananya@vit.ac.in
+Return-Path: ananya@vit.ac.in
+
+URLs:
+
+https://vit.ac.in
+What you should expect
+low risk
+safe or low suspicious
+no urgent attack type
+normal recommendation
+2. Urgency-based phishing mail
+
+Subject:
+
+Urgent: Your university account will be suspended today
+
+Email Body:
+
+Dear Student,
+
+Your university email account has been flagged for unusual activity.
+You must verify your account immediately or access will be permanently suspended today.
+
+Click below to verify now:
+
+Headers:
+
+From: support@vit-security.com
+Reply-To: verifyaccount@secure-login-alert.com
+Return-Path: noreply@mailer-check.net
+
+URLs:
+
+http://vit-account-verify-login-security.com
+What you should expect
+high risk
+phishing or at least strongly suspicious
+urgency cues detected
+spoofing / credential harvesting / impersonation style flags
+3. Credential harvesting example
+
+Subject:
+
+Password reset required immediately
+
+Email Body:
+
+We detected multiple failed login attempts on your account.
+For your protection, your password must be reset immediately.
+
+Log in using the secure portal below and confirm your username, password, and OTP to restore access.
+
+Headers:
+
+From: accounts@security-alerts.com
+Reply-To: reset@secure-access-team.com
+Return-Path: support@temporary-mailer.net
+
+URLs:
+
+http://secure-reset-login-portal.net
+What you should expect
+phishing
+credential harvesting style
+strong recommended actions
+high-risk score
+4. Brand impersonation case
+
+Subject:
+
+Microsoft Security Alert
+
+Email Body:
+
+Your Microsoft account has been compromised.
+A login attempt was detected from a new device.
+Review this activity immediately to avoid permanent suspension.
+
+Headers:
+
+From: security@microsoftverify-support.com
+Reply-To: helpdesk@mslogin-check.com
+Return-Path: no-reply@cloudmailer-support.net
+
+URLs:
+
+https://microsoft-account-review-login-check.com
+What you should expect
+brand impersonation
+suspicious domain mismatch
+phishing/high suspicious
+5. Shortened URL suspicious case
+
+Subject:
+
+Shared document for urgent review
+
+Email Body:
+
+Hi,
+
+Please review the attached shared document before the end of today.
+Use the link below.
+
+Headers:
+
+From: hr.department@company-mail.com
+Reply-To: hr.department@company-mail.com
+Return-Path: hr.department@company-mail.com
+
+URLs:
+
+https://bit.ly/4abcxyz
+What you should expect
+shortened URL should increase suspicion
+maybe suspicious even if body looks normal
+useful for showing URL analysis role
+6. Benign text but malicious-looking URL
+
+Subject:
+
+Updated timetable
+
+Email Body:
+
+Hi,
+
+Please check the new timetable through the link below.
+
+Thanks
+
+Headers:
+
+From: admin@vit.ac.in
+Reply-To: admin@vit.ac.in
+Return-Path: admin@vit.ac.in
+
+URLs:
+
+http://vit-ac-in-login-check-security-update.net
+What you should expect
+body may look normal
+URL should drive risk upward
+good case to explain why this is not just body-text ML
+7. Header spoofing / mismatch case
+
+Subject:
+
+Important notice from accounts office
+
+Email Body:
+
+Please review the fee payment notice and complete action today.
+
+Headers:
+
+From: accounts@vit.ac.in
+Reply-To: randomnotice452@gmail.com
+Return-Path: scamdelivery@mailer-temp.net
+
+URLs:
+
+https://payments-check-fees.net
+What you should expect
+header mismatch/spoofing suspicion
+useful NIS demonstration
+professor will like this one because it shows security analysis beyond plain ML
+8. Multiple URLs case
+
+Subject:
+
+Important verification links
+
+Email Body:
+
+Please verify your details using the links below.
+
+Headers:
+
+From: notice@admin-alerts.com
+Reply-To: response@alert-check.com
+Return-Path: sender@bulkmailer.net
+
+URLs:
+
+https://vit.ac.in
+http://secure-login-verification-alert.net
+https://tinyurl.com/2testlink
+What you should expect
+average URL risk behavior
+one safe URL and two suspicious ones
+shows multi-URL handling
+9. Missing/partial input case
+Case A
+
+Subject:
+
+Email Body:
+
+Verify now to avoid suspension.
+
+Headers:
+
+URLs:
+
+Case B
+
+Subject:
+
+Notice
+
+Email Body:
+
+Headers:
+
+From: test@test.com
+Reply-To: test@test.com
+
+URLs:
+
+http://free-login-check-security.net
+What you should expect
+app should still respond
+good way to test fallback robustness

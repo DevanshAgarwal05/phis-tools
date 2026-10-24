@@ -1,0 +1,17 @@
+[
+  "url_length",
+  "num_digits",
+  "num_letters",
+  "num_special",
+  "num_subdomains",
+  "has_https",
+  "has_ip",
+  "contains_at",
+  "contains_dash",
+  "contains_equal",
+  "contains_question",
+  "contains_login",
+  "contains_verify",
+  "contains_secure",
+  "suspicious_tld"
+]

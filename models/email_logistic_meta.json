@@ -1,0 +1,9 @@
+{
+  "max_features": 5000,
+  "ngram_range": [
+    1,
+    2
+  ],
+  "random_state": 42,
+  "trained_on": "CEAS_08.csv"
+}

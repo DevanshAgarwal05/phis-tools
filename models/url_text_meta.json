@@ -1,0 +1,37 @@
+{
+  "model": "Pipeline(FeatureUnion(host_tfidf + url_tfidf + struct_features) + CalibratedClassifierCV(LogisticRegression))",
+  "random_state": 42,
+  "canonicalization": "strip scheme + strip www + lowercase + strip trailing slash",
+  "notes": "Adds structural URL features, benign seed coverage, and sigmoid calibration while preserving predict_proba interface.",
+  "classes": [
+    "0",
+    "1"
+  ],
+  "dataset_rows_used": 250000,
+  "false_positives_test_base": 2438,
+  "false_positives_test_improved": 2076,
+  "probe_urls": [
+    "https://vit.ac.in",
+    "https://microsoft.com",
+    "https://google.com",
+    "http://secure-login-update.xyz/verify",
+    "http://paypal-security-verify-login.tk/update",
+    "http://192.168.1.4/verify"
+  ],
+  "probe_probs_base": [
+    0.2867805445305942,
+    0.8125168682129384,
+    0.38828441890241866,
+    0.9973526822249249,
+    0.6955959185311666,
+    0.9955346958230565
+  ],
+  "probe_probs_improved": [
+    0.27001543298187575,
+    0.8695143441361949,
+    0.37833439779183226,
+    0.9997685942426112,
+    0.8753868008721774,
+    0.9999588717183213
+  ]
+}
